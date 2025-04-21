@@ -1,0 +1,20 @@
+﻿@model Department
+@{
+	ViewBag.Title = "Department Details";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+	<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <title>Details</title>
+</head>
+<body>
+    <h1 class="alert alert-danger">
+		ID: @Model.Id :: @Model.Name :: @Model.Capacity
+
+    </h1>
+</body>
+</html>

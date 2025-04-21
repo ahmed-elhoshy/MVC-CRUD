@@ -1,0 +1,33 @@
+﻿@{
+	Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta name="viewport" content="width=device-width" />
+	<title>ShowAdd</title>
+</head>
+<body>
+	<form action="/test/add/50?y=1000" method="post">
+		<input type="number" name="s1.id" /> <br />  @*  or  name="id" bas lazm ykoon 3ndy student wahed bs, w kol el inputs tkoon name,age 3alatool *@
+		<input type="text" name="s1.name" /> <br />
+		<input type="number" name="s1.age" /> <br />
+		<hr/><input type="number" name="s2.id" /> <br /> 
+		<input type="text" name="s2.name" /> <br />
+		<input type="number" name="s2.age" /> <br />
+		<hr/>
+		<input type="text" name="x" /> <br />
+		<input type="text" name="y" /> <br />
+		<select name="id" multiple>
+			<option>100</option>
+			<option>200</option>
+			<option>300</option>
+			<option>400</option>
+		</select>
+
+		<input type="submit" value="Sum" />
+	</form>
+</body>
+</html>

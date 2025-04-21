@@ -1,0 +1,100 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\kolya\\iti\\C#\\ASP .NET MVC\\MVC_D8\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{25E5DBF9-96E2-4209-91E7-9622A18C32C1}|..\\MVC_D8_Identity\\MVC_D8_Identity.csproj|d:\\kolya\\iti\\c#\\asp .net mvc\\mvc_d8_identity\\controllers\\managecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25E5DBF9-96E2-4209-91E7-9622A18C32C1}|..\\MVC_D8_Identity\\MVC_D8_Identity.csproj|d:\\kolya\\iti\\c#\\asp .net mvc\\mvc_d8_identity\\views\\manage\\showroles.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25E5DBF9-96E2-4209-91E7-9622A18C32C1}|..\\MVC_D8_Identity\\MVC_D8_Identity.csproj|d:\\kolya\\iti\\c#\\asp .net mvc\\mvc_d8_identity\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25E5DBF9-96E2-4209-91E7-9622A18C32C1}|..\\MVC_D8_Identity\\MVC_D8_Identity.csproj|d:\\kolya\\iti\\c#\\asp .net mvc\\mvc_d8_identity\\models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25E5DBF9-96E2-4209-91E7-9622A18C32C1}|..\\MVC_D8_Identity\\MVC_D8_Identity.csproj|d:\\kolya\\iti\\c#\\asp .net mvc\\mvc_d8_identity\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ShowRoles.cshtml",
+              "DocumentMoniker": "D:\\kolya\\iti\\C#\\ASP .NET MVC\\MVC_D8_Identity\\Views\\Manage\\ShowRoles.cshtml",
+              "RelativeDocumentMoniker": "..\\MVC_D8_Identity\\Views\\Manage\\ShowRoles.cshtml",
+              "ToolTip": "D:\\kolya\\iti\\C#\\ASP .NET MVC\\MVC_D8_Identity\\Views\\Manage\\ShowRoles.cshtml",
+              "RelativeToolTip": "..\\MVC_D8_Identity\\Views\\Manage\\ShowRoles.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-08T15:18:14.247Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ManageController.cs",
+              "DocumentMoniker": "D:\\kolya\\iti\\C#\\ASP .NET MVC\\MVC_D8_Identity\\Controllers\\ManageController.cs",
+              "RelativeDocumentMoniker": "..\\MVC_D8_Identity\\Controllers\\ManageController.cs",
+              "ToolTip": "D:\\kolya\\iti\\C#\\ASP .NET MVC\\MVC_D8_Identity\\Controllers\\ManageController.cs",
+              "RelativeToolTip": "..\\MVC_D8_Identity\\Controllers\\ManageController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-08T14:51:16.564Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Course.cs",
+              "DocumentMoniker": "D:\\kolya\\iti\\C#\\ASP .NET MVC\\MVC_D8_Identity\\Models\\Course.cs",
+              "RelativeDocumentMoniker": "..\\MVC_D8_Identity\\Models\\Course.cs",
+              "ToolTip": "D:\\kolya\\iti\\C#\\ASP .NET MVC\\MVC_D8_Identity\\Models\\Course.cs",
+              "RelativeToolTip": "..\\MVC_D8_Identity\\Models\\Course.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T01:32:05.769Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "D:\\kolya\\iti\\C#\\ASP .NET MVC\\MVC_D8_Identity\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "..\\MVC_D8_Identity\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "D:\\kolya\\iti\\C#\\ASP .NET MVC\\MVC_D8_Identity\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "..\\MVC_D8_Identity\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAYwBkAAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T01:08:28.589Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\kolya\\iti\\C#\\ASP .NET MVC\\MVC_D8_Identity\\Program.cs",
+              "RelativeDocumentMoniker": "..\\MVC_D8_Identity\\Program.cs",
+              "ToolTip": "D:\\kolya\\iti\\C#\\ASP .NET MVC\\MVC_D8_Identity\\Program.cs",
+              "RelativeToolTip": "..\\MVC_D8_Identity\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T00:54:03.644Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

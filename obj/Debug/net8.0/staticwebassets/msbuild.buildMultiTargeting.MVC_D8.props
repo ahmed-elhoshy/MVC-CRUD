@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\MVC_D8.props" />
+</Project>

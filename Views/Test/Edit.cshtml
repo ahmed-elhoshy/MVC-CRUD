@@ -1,0 +1,27 @@
+﻿@using MVC_D8.Models
+
+@model EditStudentDepartmentViewModel // strongly typed view
+
+@{
+	Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta name="viewport" content="width=device-width" />
+	<title>Edit</title>
+</head>
+<body>
+	<h1>Edit</h1>
+	@* <h2>@Model.Id, @Model.Name</h2>  not dynamic *@ @* not dynamic .. no autocomplete need strongly typed model*@
+	<h2>@Model.Student.Id, @Model.Student.Name , @Model.Student.Age </h2>   @*dynamic .. autocomplete *@
+	<h2>@Model.Department.Id, @Model.Department.Name , @Model.Department.Capacity </h2>
+	<h2>@((int)ViewData["sid"] + 1)  @ViewData["sname"]</h2>
+	<h2>@(ViewBag.age + 1), id using VB = @(ViewBag.sid + 1) </h2>
+	<h2>Duration =  @TempData.Peek("Duration")</h2>
+
+
+</body>
+</html>

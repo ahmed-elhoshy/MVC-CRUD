@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewData["Title"] = "ManageRoles";
+    var rolesInList = new SelectList(ViewBag.rolesIn, "Id", "Name");
+	var rolesOutList = new SelectList(ViewBag.rolesOut, "Id", "Name");
+}
+
+<h1>Manage Roles user : @ViewBag.user.Name</h1>
+
+<form method="post">
+    <select multiple name="rolestoRemove" asp-items="rolesInList" >
+    </select>
+    <select multiple name="rolesToAdd" asp-items="rolesOutList" >      
+    </select>
+    <input type="submit" value="change roles" class="btn btn-light" />
+</form>

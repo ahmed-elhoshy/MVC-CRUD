@@ -1,0 +1,13 @@
+﻿@model Department
+@{
+	SelectList deptsList = new SelectList(ViewBag.Departments, "Id", "Name", "Capacity");
+}
+
+	<div class="form-group">
+	<label asp-for="Name"></label>
+	<input asp-for="Name" placeholder="name" />
+</div>
+	<div class="form-group">
+	<label asp-for="Capacity"></label>
+	<input asp-for="Capacity" placeholder="Capacity" />
+</div>

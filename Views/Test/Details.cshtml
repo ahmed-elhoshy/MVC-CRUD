@@ -1,0 +1,66 @@
+﻿@{
+	Layout = null;
+	int x = 10;
+	string name = "Hoshy";
+	int degree = 60;
+	List<string> names = new List<string> { "Hoshy", "Ali", "Sara" };
+	Student s1 = new Student { Id = 1, Name = "Hoshy" };
+	List<Student> students = new List<Student> {
+		new Student { Id = 1, Name = "Hoshy" },
+		new Student { Id = 2, Name = "Ali" },
+		new Student { Id = 3, Name = "Sara" },
+		new Student { Id = 4, Name = "Hesham" }
+	};
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta name="viewport" content="width=device-width" />
+	<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+	<title>Details</title>
+</head>
+<body>
+	<h1>Details view @(x + 1)</h1>
+	<h2>@name</h2>
+	<h2>name length: @(name.Length)</h2>
+	@if (degree == 60)
+	{
+		<div>Succeed</div>
+	}
+	else
+	{
+		<div>fail</div>
+	}
+
+	<ul>
+		@foreach (var item in names)
+		{
+			<li>@item</li>
+		}
+	</ul>
+
+	<h1>@s1</h1>  @*output: MVC_D1.Models.Student to change must override toString func in student class *@
+	<h1>@s1.Name @s1.Id</h1>
+
+	<table class="table table-bordered table-hover">
+		<thead>
+			<tr>
+				<th>Id</th>
+				<th>Name</th>
+			</tr>
+		</thead>
+		<tbody>
+			@foreach (var item in students)
+			{
+				<tr>
+					<td>@item.Id</td>
+					<td>@item.Name</td>
+				</tr>
+			}
+		</tbody>
+	</table>
+
+</body>
+</html>

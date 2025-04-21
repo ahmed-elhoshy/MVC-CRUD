@@ -1,0 +1,110 @@
+﻿@model Student
+@{
+	Layout = null;
+	ViewBag.Title = "Create Student";
+
+	SelectList deptsList = new SelectList(ViewBag.Departments, "Id", "Name", 100);
+}
+
+<!DOCTYPE html>
+
+	<style>
+		body {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+			margin: 0;
+			background-color: gainsboro;
+		}
+
+		form {
+			display: flex;
+			flex-direction: column;
+			gap: 10px;
+			padding: 20px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			background-color: white;
+		}
+
+		.form-group {
+			display: flex;
+			align-items: center;
+			gap: 10px;
+		}
+
+			.form-group label {
+				min-width: 100px;
+			}
+
+
+	.field-validation-error {
+		color: red;
+	}
+
+	.validation-summary-errors {
+		color: red;
+	}
+
+	</style>
+	<form asp-action="Create">
+		@*if using tag helper then default method = post not get *@
+
+
+		<div class="form-group">
+			<label asp-for="Name"></label>
+			<input asp-for="Name" placeholder="name" />
+			<span asp-validation-for="Name"></span>
+		</div>
+		<div class="form-group">
+			<label asp-for="Age"></label>
+			<input asp-for="Age" placeholder="age" />
+			<span asp-validation-for="Age"></span>
+		</div>
+		<div class="form-group">
+			<label asp-for="Email"></label>
+			<input asp-for="Email" placeholder="Email" />
+			<span asp-validation-for="Email"></span>
+		</div>
+		<div class="form-group">
+			<label asp-for="Password"></label>
+			<input asp-for="Password" placeholder="Password" />
+			<span asp-validation-for="Password"></span>
+		</div>
+		<div class="form-group">
+			<label asp-for="Cpassword"></label>
+			<input asp-for="Cpassword" placeholder="Cpassword" />
+			<span asp-validation-for="Cpassword"></span>
+		</div>
+
+		
+		<div class="form-group">
+			<label asp-for="DeptNo">Department</label>
+			<select asp-for="DeptNo" asp-items="deptsList">
+				<option>Select Dept</option>
+			</select>
+			<span asp-validation-for="DeptNo"></span>
+		</div>
+
+		@* <select name="DeptNo">  *@
+		@* 	@foreach (var item in ViewBag.Departments)  *@
+		@* 	{ *@
+		@* 		<option value="@item.Id">@item.Name</option> *@
+		@* 	} *@
+		@* </select> *@
+
+
+		@* <partial name="UpdateStudent" /> *@
+
+		<div asp-validation-summary="All"></div>
+		<div>
+			<input type="submit" value="Create" class="btn btn-primary" />
+		</div>
+
+	</form>
+	<script src="~/lib/jquery/dist/jquery.js"> </script>
+	<script src="~/lib/jquery-validation/dist/jquery.validate.js"> </script>
+	<script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+

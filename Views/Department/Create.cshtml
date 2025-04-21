@@ -1,0 +1,69 @@
+﻿@model Student
+@{
+	ViewBag.Title = "Add Department";
+	SelectList deptsList = new SelectList(ViewBag.Departments, "Id", "Name", "Capacity");
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta name="viewport" content="width=device-width" />
+	<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+	<title>Create</title>
+	<style>
+		body {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+			margin: 0;
+			background-color: gainsboro;
+		}
+
+		form {
+			display: flex;
+			flex-direction: column;
+			gap: 10px;
+			padding: 20px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			background-color: white;
+		}
+
+		.form-group {
+			display: flex;
+			align-items: center;
+			gap: 10px;
+		}
+
+			.form-group label {
+				min-width: 100px;
+			}
+	</style>
+</head>
+<body>
+	<form asp-action="Create">
+		@*if using tag helper then default method = post not get *@
+
+
+		@* <select name="DeptNo">  *@
+		@* 	@foreach (var item in ViewBag.Departments)  *@
+		@* 	{ *@
+		@* 		<option value="@item.Id">@item.Name</option> *@
+		@* 	} *@
+		@* </select> *@
+
+		<div class="form-group">
+			<label asp-for="Id"></label>
+			<input asp-for="Id" placeholder="Id" />
+		</div>
+		<partial name="UpdateDepartment" />
+
+		<div>
+			<input type="submit" value="Create" class="btn btn-primary" />
+		</div>
+	</form>
+</body>
+</html>

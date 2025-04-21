@@ -1,0 +1,58 @@
+﻿@model Department
+@{
+	ViewBag.Title = "Edit Department";
+    SelectList deptsList = new SelectList(ViewBag.Departments, "Id", "Name","Capacity");
+
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+	<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <title>Edit</title>
+	<style>
+		body {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+			margin: 0;
+			background-color: gainsboro;
+		}
+
+		form {
+			display: flex;
+			flex-direction: column;
+			gap: 10px;
+			padding: 20px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			background-color: white;
+		}
+
+		.form-group {
+			display: flex;
+			align-items: center;
+			gap: 10px;
+		}
+
+			.form-group label {
+				min-width: 100px;
+			}
+	</style>
+</head>
+<body>
+	<form asp-action="Edit">
+		@*if using tag helper then default method = post not get *@
+
+		<h6>ID: @Model.Id</h6>
+		<partial name="UpdateDepartment"/>
+		<div>
+			<input type="submit" value="Update" class="btn btn-primary" />
+		</div>
+	</form>
+</body>
+</html>
